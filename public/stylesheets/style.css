@@ -1,8 +1,8 @@
 :root {
-  --primary: #bfe7fd;
-  --secondary: #024e76;
-  --tertiary: #39a6b2;
-  --light-dark: #13a9b9;
+  --primary: #ffffff;
+  --secondary: #ffffff;
+  --tertiary: #26ff00;
+  --light-dark: #e0e0e0;
   --dark: #3f4346;
   --border-radius: 0.3rem;
 }
@@ -348,4 +348,17 @@ textarea:focus, input:focus {
   }
   
   }
+
+  @media (min-width: 1200px) {
+    .main-logop{ content: url("../assets/images/PostRecipe.JPG");
+      width: 80%;
+      height: 300px;
+      margin-top: 10px;
+      padding-top: 10px;
+      position: relative;
+      top: -10px;
+  }
+}
+
+
 
