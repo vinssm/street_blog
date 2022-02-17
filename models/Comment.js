@@ -23,15 +23,17 @@ class Comment extends Model {}
     },
     userId: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'user',
         key: 'id'
       },
     }, 
-    postId: {
+    recipeId: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
-        model: 'post',
+        model: 'recipe',
         key: 'id'
       },
     }, 

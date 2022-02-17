@@ -1,20 +1,20 @@
 async function newFormHandler(event) {
     event.preventDefault();
-  
+    
     const title = document.querySelector('#title').value;
     const image_url = document.querySelector('#image_link').value;
     const ingredients = document.querySelector('#ingredients').value;
-    const steps = document.querySelector('#steps').value;
+    const howto_recipe = document.querySelector('#howto_recipe').value;
     const category = document.querySelector('#category').value;
 
-    const response = await fetch(`/api/recipes`, {
+    const response = await fetch(`/api/recipe`, {
       method: 'POST',
       body: JSON.stringify({
-        title,
- 	    image_url,
+        title, 	      
         ingredients,
-        steps,
-        category
+        howto_recipe,
+        category,
+        image_url
       }),
       headers: {'Content-Type': 'application/json'}
     });
