@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Op } = require('sequelize');
-const { Recipe, Comment, User } = require('../models');
+const { Recipe, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
@@ -8,14 +8,14 @@ router.get('/', (req, res) => {
   Recipe.findAll({
       where: {
         id: {
-          [Op.between]: [1,6]
+          [Op.between]: [1,8]
         }
       },
       attributes: [
           'id',
           'title',
           'ingredients',
-          'howto_recipe',
+          'description',
           'category',
           'image_url'
       ],
@@ -47,6 +47,8 @@ Recipe.findAll({
     attributes: [
         'id',
         'title',
+        'ingredients',
+          'description',
         'category',
         'image_url'
     ],
@@ -72,7 +74,7 @@ Recipe.findAll({
 });
 
 // get single post
-router.get('/recipe/:id', (req,res) => {
+router.get('/recipes/:id', (req,res) => {
 Recipe.findOne({
     where: {
       id: req.params.id
@@ -83,7 +85,7 @@ Recipe.findOne({
       'category',
       'image_url',
       'created_at',
-      'howto_recipe',
+      'description',
       'ingredients'
     ],
     include: [

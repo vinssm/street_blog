@@ -2,6 +2,17 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Recipe, User, Comment } = require('../models/');
 const withAuth = require('../utils/auth');
+const multer = require('multer')
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, '../assets/images/')
+  },
+  filename: (req, file, cb) => {
+      console.log(file)
+      cb(null, Date.now() + path.extname(file.originalname))
+  }
+})
 
 router.get('/', withAuth, (req, res) => {
   console.log(req.session.userId)
@@ -13,7 +24,7 @@ router.get('/', withAuth, (req, res) => {
       'id',
       'title',
       'ingredients',
-      'howto_recipe',
+      'description',
       'category',
       'image_url'
   ],
@@ -49,6 +60,17 @@ router.get('/new', withAuth, (req,res) => {
 res.render('addPost', {loggedIn: true});
 })
 
+const upload = multer({storage: storage})
+
+router.get("/upload", (req, res) => {
+  res.render("upload");
+});
+
+router.post("/upload", upload.single("image"), (req, res) => {
+  res.send("upload");
+});
+
+
 // when clicking on edit post, will be redirected to this page
 router.get('/edit/:id', withAuth, (req, res) => {
   Recipe.findByPk(req.params.id, {
@@ -56,7 +78,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
           'id',
           'title',
           'ingredients',
-          'howto_recipe',
+          'description',
           'category',
           'image_url'
       ],

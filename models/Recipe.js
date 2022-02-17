@@ -19,7 +19,7 @@ Recipe.init(
         type: DataTypes.TEXT('long'),
         allowNull: false
       },
-      howto_recipe: {
+      description: {
         type: DataTypes.STRING,
         allowNull: false
       },
@@ -29,10 +29,10 @@ Recipe.init(
       },
       image_url: {
         type: DataTypes.STRING,
-        allowNull: true,
-        validate: {
-            isURL: true
-      }
+        allowNull: true
+      //   validate: {
+      //       isURL: true
+      // }
       },
       userId: {
         type: DataTypes.INTEGER,

@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
           'id',
           'title',
           'ingredients',
-          'howto_recipe',
+          'description',
           'category',
           'image_url'
       ],
@@ -46,7 +46,7 @@ Recipe.findAll({
         'id',
         'title',
         'ingredients',
-        'howto_recipe',
+        'description',
         'category',
         'image_url'
     ],
@@ -83,7 +83,7 @@ router.get('/:id', (req, res) => {
       'id',
       'title',
       'ingredients',
-      'howto_recipe',
+      'description',
       'category',
       'image_url'
     ],
@@ -112,7 +112,7 @@ router.post('/', withAuth, (req, res) => {
   Recipe.create({
     title: req.body.title,
     ingredients: req.body.ingredients,
-    howto_recipe: req.body.howto_recipe,
+    description: req.body.description,
     category: req.body.category,
     image_url: req.body.image_url,
     userId: req.session.userId

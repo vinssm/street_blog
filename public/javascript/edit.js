@@ -6,8 +6,8 @@ const editFormHandler = async (event) => {
 
   const title = document.querySelector('#title').value;
   const ingredients = document.querySelector('#ingredients').value;
-  const howto_recipe = document.querySelector('#howto_recipe').value;
-  const image_url = document.querySelector('#image_link').value;
+  const description = document.querySelector('#description').value;
+  const image_url = document.querySelector('#image_url').value;
   const category = document.querySelector('#category').value;
 
   const id = window.location.toString().split('/')[
@@ -19,7 +19,7 @@ const editFormHandler = async (event) => {
       body: JSON.stringify({
         title,
         ingredients,
-        howto_recipe,
+        description,
         image_url,
         category
       }),
