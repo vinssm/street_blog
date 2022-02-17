@@ -2,6 +2,7 @@
   --primary: #ffffff;
   --secondary: #ffffff;
   --tertiary: #26ff00;
+  --fourth: #1bb100;
   --light-dark: #e0e0e0;
   --dark: #3f4346;
   --border-radius: 0.3rem;
@@ -9,6 +10,16 @@
 
 * {
   box-sizing: border-box;
+}
+
+#hero {
+  min-height: 200px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 body {
@@ -21,8 +32,16 @@ body {
   font-size: 16px;
 }
 
+
+h2 {
+  font-family: play;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--fourth);
+  text-align: center;
+}
+
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -58,8 +77,13 @@ p {
   font-size: 1.2rem;
 }
 
+.line {
+  height: 1px;
+  background: black;
+}
+
 input {
-    width: 100%;
+    /* width: 100%; */
     border: 1px solid #ccc;
     background: #FFF;
     margin: 0 0 5px;
@@ -68,6 +92,19 @@ input {
 
 .card-header h2 {
   color: var(--primary);
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .btn {
@@ -124,8 +161,17 @@ input {
 .main1 {
   padding: 3% 4%;
   background-color: var(--dark);
-  color: var(--primary);
+  color: var(--primary);  
 }
+
+.page-main {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+ 
 
 .main p {
   max-width: 75%;
@@ -140,6 +186,34 @@ input {
   border-radius: var(--border-radius);
   box-shadow: 6px 5px var(--light-dark);
   margin-left: 35%;
+}
+
+.dashboard-title{
+  margin-bottom: 30px;
+}
+
+.formBox {
+  width: 100% !important;
+  margin-bottom: 20px;
+}
+
+.post-title{
+  position: relative;
+  font-size: 3rem;
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 0 80px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 6px 5px var(--light-dark);
+  margin-left: 35%;
+}
+
+.title{
+  margin-bottom: 20px;
+  display: block;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .app-title a {
@@ -181,6 +255,9 @@ footer {
   text-decoration: none;
 }
 
+.container {
+  position: relative;
+}
 
 .card {
   margin: 0 0 20px 0;
@@ -207,7 +284,6 @@ footer {
   margin: 10px;
 }
 
-
 .form-label,
 .form-input,
 .form-textarea {
@@ -233,6 +309,24 @@ textarea:focus, input:focus {
   border-radius: var(--border-radius);
 }
 
+#infobars {
+  height: 20px;
+  margin-bottom: 20px;
+  background-size: cover;
+  position: relative;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.infoBox {
+   height: 20px;
+   margin-bottom: 20px;
+   background-size: cover;
+   position: relative;
+}
 
 .min-100-vh {
   min-height: 100vh;
@@ -270,6 +364,20 @@ textarea:focus, input:focus {
   justify-content: space-between;
 }
 
+.appetizers {
+  position: relative;
+  left: 70%;
+}
+
+.breakfast{
+position: relative;
+left: 180%;
+}
+
+.dessert{
+  position: relative;
+  left: 300%;
+}
 
 
 @media (min-width: 768px) {

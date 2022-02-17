@@ -3,14 +3,16 @@ const postId = document.querySelector('input[name="post-id"]').value;
 const commentFormHandler = async (event) => {
   event.preventDefault();
 
-  const commentContent = document.querySelector('textarea[name="comment-body"]').value;
-  console.log(commentContent);
+  const commentContent = document.querySelector('textarea[name="comment-body"]').value.trim();
+  const recipeId = window.location.toString().split('/')[
+    window.location.toString().split('/').length - 1,
+   console.log(commentContent)];
 
   if(commentContent) {
     const response = await fetch('/api/comment', {
       method: 'POST',
       body: JSON.stringify({
-        postId,
+        recipeId,
         commentContent
       }),
       headers: {
@@ -25,4 +27,4 @@ const commentFormHandler = async (event) => {
   };
 }
 
-document.querySelector('#new-comment-form').addEventListener('submit', commentFormHandler);
+document.querySelector('#comment-form').addEventListener('submit', commentFormHandler);

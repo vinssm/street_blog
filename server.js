@@ -2,11 +2,27 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-const routes = require('./routes');
+const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+
 
 const sequelize = require("./config/connection");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+
+const multer = require('multer')
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, '../assets/images/')
+  },
+  filename: (req, file, cb) => {
+      console.log(file)
+      cb(null, Date.now() + path.extname(file.originalname))
+  }
+})
+
+
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -25,6 +41,8 @@ const sess = {
 };
 
 app.use(session(sess));
+
+// global.__basedir = __dirname;
 
 //const helpers = require('./utils/helpers');
 
@@ -45,7 +63,15 @@ app.use(routes);
 //   app.listen(PORT, () => console.log('Now listening'));
 // });
 
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}!`);
-  sequelize.sync({ force: false });
-});
+// app.listen(PORT, () => {
+//   console.log(`App listening on port ${PORT}!`);
+//   sequelize.sync({ force: false });
+// });
+
+
+sequelize.sync({force: false}).then(() => {
+  app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}!`);
+      });
+  });
+  
