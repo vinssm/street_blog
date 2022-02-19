@@ -26,7 +26,6 @@
 ## Tests
 - Run npm test
 
-## Deployed App View![Wireframe](https://user-images.githubusercontent.com/26659001/154821886-a2a7f127-1e5a-4bc2-b627-ce03d9fede7c.jpg)
-
+## Deployed App View!
 
 
