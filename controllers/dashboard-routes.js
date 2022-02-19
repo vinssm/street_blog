@@ -2,11 +2,12 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Recipe, User, Comment } = require('../models/');
 const withAuth = require('../utils/auth');
-const multer = require('multer')
+const multer = require('multer');
+//const upload = multer({dest: '/uploads/'});
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, '../assets/images/')
+    cb(null, '/uploads/')
   },
   filename: (req, file, cb) => {
       console.log(file)
@@ -30,14 +31,14 @@ router.get('/', withAuth, (req, res) => {
   ],
   order: [['created_at', 'DESC']], 
   include: [
-      {
-        model: Comment,
-        attributes: ['id', 'commentContent', 'userId', 'recipeId'],
-        include: {
-          model: User,
-          attributes: ['username']
-        }
-      },
+      // {
+      //   // model: Comment,
+      //   // attributes: ['id', 'commentContent', 'userId', 'recipeId'],
+      //   include: {
+      //     model: User,
+      //     attributes: ['username']
+      //   }
+      // },
       {
         model: User,
         attributes: ['username']

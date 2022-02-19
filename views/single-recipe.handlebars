@@ -8,11 +8,11 @@
 
         <div class="row single infobox">
             <div class="col-md-6">
-                <div class="desc">
+                <div class="singledes">
                     <h3>Ingredients</h3>
                     <p>{{recipe.ingredients}}</p>
                 </div>
-                <div class="desc">
+                <div class="singledes">
                     <h3>How to Make</h3>
                     <ul>
                         <li>{{recipe.description}}</li>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        {{#if recipe.comments.length}}
+        {{!-- {{#if recipe.comments.length}}
             {{> comments recipe.comments}}
         {{/if}}
 
@@ -51,11 +51,11 @@
                 </form>
             </div>
         </div>
-        {{/if}}
+        {{/if}}  --}}
 
     </div>
-</div>
+</div> 
 
-{{#if loggedIn}}
+{{!-- {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
-{{/if}}
+{{/if}} --}}

@@ -1,16 +1,19 @@
 <div class="col-md-4 center">
-<a href="/recipe/{{id}}">
+<a href="/recipes/{{id}}">
     <div class="info">
         <div class="infoBox" style="background-image:url({{image_url}});">
             <div class="inner">
             </div>
         </div>
-        <div class="desc">
+        <div class="infodes">
             <h3>{{title}}</h3>
+            {{!-- <p>{{ingredients}}</p>
+            <li>{{description}}</li> --}}
         </div>
     </div>
+    
 
-    <a href="/dashboard/edit/{{id}}" class="btn btn-info">Edit Recipe</a>
+    {{!-- <a href="/dashboard/edit/{{id}}" class="btn btn-info">Edit Recipe</a> --}}
 
 </a>
 </div>

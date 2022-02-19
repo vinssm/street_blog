@@ -306,7 +306,7 @@ textarea:focus, input:focus {
   margin: 5px 0;
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius)
 }
 
 #infobars {
@@ -319,6 +319,7 @@ textarea:focus, input:focus {
 .info {
   margin-top: 20px;
   margin-bottom: 20px;
+  border: #1bb100 solid 1px;
 }
 
 .infoBox {
@@ -326,6 +327,23 @@ textarea:focus, input:focus {
    margin-bottom: 20px;
    background-size: cover;
    position: relative;
+}
+
+.infodes {
+  padding-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.singledes{
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.single{
+  border: #1bb100 solid 1px;
+  width: 400px;
+  padding-left: 10px;
 }
 
 .min-100-vh {

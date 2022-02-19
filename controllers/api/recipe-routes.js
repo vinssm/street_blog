@@ -15,14 +15,14 @@ router.get('/', (req, res) => {
       ],
       order: [['created_at', 'DESC']], 
       include: [
-          {
-            model: Comment,
-            attributes: ['id', 'commentContent', 'userId', 'recipeId'],
-            include: {
-              model: User,
-              attributes: ['username']
-            }
-          },
+          // {
+          //   model: Comment,
+          //   attributes: ['id', 'commentContent', 'userId', 'recipeId'],
+          //   include: {
+          //     model: User,
+          //     attributes: ['username']
+          //   }
+          // },
           {
             model: User,
             attributes: ['username']
@@ -52,14 +52,14 @@ Recipe.findAll({
     ],
     order: [['created_at', 'DESC']], 
     include: [
-        {
-          model: Comment,
-          attributes: ['id', 'commentContent', 'userId', 'recipeId'],
-          include: {
-            model: User,
-            attributes: ['username']
-          }
-        },
+        // {
+        //   model: Comment,
+        //   attributes: ['id', 'commentContent', 'userId', 'recipeId'],
+        //   include: {
+        //     model: User,
+        //     attributes: ['username']
+        //   }
+        // },
         {
           model: User,
           attributes: ['username']
