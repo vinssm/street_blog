@@ -329,6 +329,10 @@ textarea:focus, input:focus {
    position: relative;
 }
 
+.infoBox1 {
+  padding-left: 100px;
+}
+
 .infodes {
   padding-right: 10px;
   margin-left: 10px;
