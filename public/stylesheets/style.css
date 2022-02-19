@@ -342,7 +342,7 @@ textarea:focus, input:focus {
 
 .single{
   border: #1bb100 solid 1px;
-  width: 400px;
+  width: 100%;
   padding-left: 10px;
 }
 
