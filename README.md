@@ -3,7 +3,7 @@
 ## This challenge is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
 
 ## Deploy to heroku
-* [Tech Blog LINK](https://young-fortress-79519.herokuapp.com/)
+* [Street Blog LINK](https://young-fortress-79519.herokuapp.com/)
 
 ## User Story
 - Blog postings who writes about street posts
@@ -26,6 +26,7 @@
 ## Tests
 - Run npm test
 
-## Deployed App View
+## Deployed App View![Wireframe](https://user-images.githubusercontent.com/26659001/154821886-a2a7f127-1e5a-4bc2-b627-ce03d9fede7c.jpg)
+
 
 
