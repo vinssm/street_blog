@@ -1,1 +1,31 @@
-# street_blog![Wireframe](https://user-images.githubusercontent.com/26659001/153520061-5e16c06f-04d2-4255-9272-3d54d6394d99.jpg)
+# street_blog!
+
+## This challenge is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
+
+## Deploy to heroku
+* [Tech Blog LINK](https://young-fortress-79519.herokuapp.com/)
+
+## User Story
+- Blog postings who writes about street posts
+- I WANT a CMS-style blog site
+- SO THAT I can publish Blog posts
+
+## Dev Steps 
+- install packages using npm install 
+- create .env file and add DB_NAME; DB_USER; DB_PW
+- In the address bar of the project folder type cmd to open terminal and enter mysql -u root -p
+- Enter Password to login to SQL shell
+- Source the DB using source db/schema.sql
+- Enter show databases
+- use project database name
+- Quit 
+- Now in the GIT Bash Terminal in vs code seed the database
+- Enter npm run seed
+- Then follwed by npm start to start the server 
+
+## Tests
+- Run npm test
+
+## Deployed App View
+
+
