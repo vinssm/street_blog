@@ -88,15 +88,7 @@ Recipe.findOne({
       'description',
       'ingredients'
     ],
-    include: [
-      // {
-      //   // model: Comment,
-      //   // attributes: ['id', 'comment_text', 'userId', 'recipeId', 'created_at'],
-      // //   include: {
-      // //     model: User,
-      // //     attributes: ['username']
-      // //   }
-      // // },
+    include: [     
       {
         model: User,
         attributes: ['username']

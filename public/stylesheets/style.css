@@ -32,7 +32,6 @@ body {
   font-size: 16px;
 }
 
-
 h2 {
   font-family: play;
   font-weight: bold;
@@ -99,7 +98,6 @@ input {
   width: 33.33%;
   padding: 5px;
 }
-
 
 .row::after {
   content: "";

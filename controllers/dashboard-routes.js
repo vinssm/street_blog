@@ -30,15 +30,7 @@ router.get('/', withAuth, (req, res) => {
       'image_url'
   ],
   order: [['created_at', 'DESC']], 
-  include: [
-      // {
-      //   // model: Comment,
-      //   // attributes: ['id', 'commentContent', 'userId', 'recipeId'],
-      //   include: {
-      //     model: User,
-      //     attributes: ['username']
-      //   }
-      // },
+  include: [      
       {
         model: User,
         attributes: ['username']
