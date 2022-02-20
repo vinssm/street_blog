@@ -41,7 +41,8 @@
 ## Deployed App View!
 
 
-![Wireframe](https://user-images.githubusercontent.com/26659001/154821984-9fc6de59-47e3-4690-8d6c-303792331534.jpg)
+![Wireframe]![Wireframe](https://user-images.githubusercontent.com/26659001/154849810-b2194223-77f0-49f0-a59c-2fe07864ec91.jpg)
+
 
 ## Known issues
 - Images not loading 
