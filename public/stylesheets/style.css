@@ -345,6 +345,18 @@ textarea:focus, input:focus {
   text-align: center;
 }
 
+.red {
+  color: #ff0000;
+}
+
+.infotext {
+  font-family: play;
+  justify-content: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .singledes{
   padding-right: 10px;
   margin-left: 10px;
