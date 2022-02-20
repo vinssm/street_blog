@@ -2,8 +2,20 @@
 
 ## This challenge is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. 
 
+## As your first opportunity to show employers your collaborative skills and coding abilities, this particular project will be a focal point of your portfolio. Employers want to see what you can do, but they also want to see how you work with other developers. The more examples of deployed collaborative work you have in your portfolio, the more likely you are to get an interview and a job. That’s why one of the requirements for this project is that you add it to your portfolio.
+
 ## Deploy to heroku
 * [Street Blog LINK](https://young-fortress-79519.herokuapp.com/)
+
+## Project Requirements
+- Use Node.js and Express.js to create a RESTful API.
+- Use Handlebars.js as the templating engine.
+- Use MySQL and the Sequelize ORM for the database.
+- Have both GET and POST routes for retrieving and adding new data.
+- Be deployed using Heroku (with data).
+- Use at least one new library, package, or technology that we haven’t discussed.
+- Have a polished UI.
+- Be responsive.
 
 ## User Story
 - Blog postings who writes about street posts
