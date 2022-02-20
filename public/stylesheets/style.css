@@ -100,7 +100,7 @@ input {
   padding: 5px;
 }
 
-/* Clearfix (clear floats) */
+
 .row::after {
   content: "";
   clear: both;
@@ -132,6 +132,12 @@ input {
 
 .li-inline {
   display: inline;
+}
+
+.borderLine {
+  border: solid 2px;
+  color: var(--fourth);
+  width: 50%;
 }
 
 .navright {
