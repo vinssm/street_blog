@@ -20,6 +20,7 @@
     "express-session": "^1.17.2",
     "multer": "^1.4.4",
     "mysql2": "^2.1.0",
+    "nodemon": "^2.0.15",
     "sequelize": "^5.22.5",
     "star-ratings": "^1.0.0"
   },
