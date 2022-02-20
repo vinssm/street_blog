@@ -368,6 +368,32 @@ textarea:focus, input:focus {
   padding-left: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* body {
+  display:flex;
+  height: 100vh;
+}
+
+.star {
+  font-size: 1rem;
+  color: #ff9800;
+  border-color: unset;
+  border: none;
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
+.start_rating {
+  user-select: none;
+}
+
 .min-100-vh {
   min-height: 100vh;
 }

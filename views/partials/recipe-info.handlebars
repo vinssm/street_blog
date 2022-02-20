@@ -7,12 +7,25 @@
         </div>
         <div class="infodes">
             <h3>{{title}}</h3>
+            <div class="star_rating"></div>
+                <button class="star">&#9734;</button>
+                <button class="star">&#9734;</button>
+                <button class="star">&#9734;</button>
+                <button class="star">&#9734;</button>
+                <button class="star">&#9734;</button>
             {{!-- <p>{{ingredients}}</p>
             <li>{{description}}</li> --}}
         </div>
     </div>
     
-
+<script> 
+    const allstars = document.querySelectorAll('.star');
+    allstars.forEach((star, i ) => {
+         start.onclick = function() {
+             let current = i + 1;
+         }
+    })
+</script>
     {{!-- <a href="/dashboard/edit/{{id}}" class="btn btn-info">Edit Recipe</a> --}}
 
 </a>
