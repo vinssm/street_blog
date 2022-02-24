@@ -44,6 +44,10 @@
 ![Wireframe]![Wireframe](https://user-images.githubusercontent.com/26659001/154849810-b2194223-77f0-49f0-a59c-2fe07864ec91.jpg)
 
 
+## Package Used for uploading Image
+- Multer 
+- But we had issue after the image is uploaded. Dipalued message is:  Not allowed to load local resource: file:///C:/fakepath/BEN_0620.jpg
+
 ## Known issues
 - Images not loading 
 
