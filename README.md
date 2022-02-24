@@ -43,6 +43,17 @@
 
 ![Wireframe]![Wireframe](https://user-images.githubusercontent.com/26659001/154849810-b2194223-77f0-49f0-a59c-2fe07864ec91.jpg)
 
+## Build with:
+- Node.js
+- Express
+- Mysql2
+- nodemon
+- sequelize
+- star-ratings
+- connect-session-sequelize
+- dotenv
+- multer
+- 
 
 ## Package Used for uploading Image
 - Multer 
