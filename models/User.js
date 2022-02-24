@@ -27,7 +27,7 @@ class User extends Model {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8]
+        len: [4]
       },
     },
   },
