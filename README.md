@@ -53,7 +53,6 @@
 - connect-session-sequelize
 - dotenv
 - multer
-- 
 
 ## Package Used for uploading Image
 - Multer 
